@@ -1,0 +1,214 @@
+/*Navigation Bar*/
+.topnav {
+  background-color: black;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: lightblue;
+  color: white;
+}
+
+/*resume button on the header*/
+.resume {
+  background-color: #550504; /* Dark Red */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.resume::shadow {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+/*picture of me on the left*/
+#container{
+  float: center;
+}
+#info img{
+  float: left;
+  width: 80%;
+  padding: 8px;
+}
+.left{
+  float: center; 
+  font-weight: normal;
+}
+
+/*GitHub Logo*/
+.fa3 {
+  position: relative;
+  font-size: 60px;
+  width: 20%;
+  text-align: center;
+  text-decoration: none;
+  float: left;
+}
+.fa3:hover {
+  opacity: 0.7;
+}
+/*linkedin logo*/
+.fa2 {
+  position: relative;
+  font-size: 60px;
+  width: 31%;
+  text-align: center;
+  text-decoration: none;
+  float: left;
+}
+.fa2:hover {
+  opacity: 0.7;
+}
+
+/*dribble logo*/
+.fa {
+  position: relative;
+  float: left;
+  font-size: 60px;
+  width: 35%;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+#AboutMe{
+  text-align: left;
+  display: inline;
+}
+
+/*Trying Word Cloud*/
+.skills{
+  position: relative;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 4vw;
+  color: #550504;
+}
+
+/*portfolio Gallery*/
+.col-sm-6{
+  position: relative;
+}
+
+/*Flip Cards*/
+.flip-card {
+  background-color: transparent;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: transparent;
+  color: black;
+  transform: rotateY(180deg);
+  font-display: 14px;
+}
+
+/*Preloader Animation*/
+.preloader{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000;
+  background-color: black;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: show;
+  display: flex;
+  align-items: center;
+}
+.preloader img{
+  animation: spin 3s ease;
+  width: 650px;
+  margin: auto;
+  transition: all;
+  overflow: show;
+}
+/*Coding Samples*/
+.row2{
+  text-indent: 26px;
+}
+.caption{
+  display: block;
+}
+/*media query stuff*/
+     @media only screen and (max-width: 600px) {
+      .flip-card:hover .flip-card-inner{
+        transform: none;
+      }
+      
+      h4{
+        display: none;
+      }
+
+      .CSSGrids{
+        width: 10%;
+        height: 10%;
+      }
+      .topnav{
+        display: none;
+      }
+    }
+    
