@@ -1,0 +1,70 @@
+/*Navigation Bar*/
+.topnav {
+    background-color: #0F101E;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: lightblue;
+    color: white;
+  }
+  /*resume*/
+  .resume {
+    background-color: #550504; /* Dark Red */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  .resume::shadow {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  .trial{
+    position: fixed;
+    background-attachment: fixed;;
+  }
+  /*Project text*/
+  .title{
+    text-align: center;
+    margin-top: 5px;
+  }
+  .text{
+    display: inline-block;
+  }
+  .caption{
+    text-align: center;
+  }
+  .projectoverview{
+    text-align: left;
+    width: 550px;
+    
+  }
+  /*rid me photo*/
+  .ridme{
+    float: right;
+    width: 550px;
+    position: relative;
+  }
+  
